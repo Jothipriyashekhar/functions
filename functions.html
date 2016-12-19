@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+/*defining the function first and then calling it*/
+	function addition(num1,num2)
+	{
+		var sum=num1+num2;
+		return sum;
+	}
+	document.write(addition(10,2));
+
+/*before the function definition function call is present*/
+	document.write(sub(10,2));
+
+   function sub(num1,num2)
+	{
+		var dif=num1-num2;
+		return dif;
+	}
+
+	/*anonymous function expression*/
+	var c=function (num1,num2)/*expression*/
+	{
+		var mul=num1*num2;
+		return mul;
+	}
+	document.write(c(10,2));
+
+	/*named function expression*/
+	var d=function divide (num1,num2)/*expression*/
+	{
+		var div=num1/num2;
+		return div;
+	}
+	document.write(d(10,2));
+
+	/*self invoked functions*/
+
+	var e=function modulo (num1,num2)/*expression*/
+	{
+		var mod=num1%num2;
+		return mod;
+	}(10,2);
+	document.write(e);
+
+</script>
+</body>
+</html>
